@@ -1,0 +1,33 @@
+.clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.flexlayout-flex-layout-container{
+  .clearfix;
+  margin:0;
+  padding:0;
+  background:transparent;
+  >*{
+    float: left;
+    .clearfix;
+  }
+  &.row {
+    width:inherit;
+    height:auto;
+  }
+  &.column {
+    width:auto;
+    height:auto;
+    &:only-child{
+      width:100%;
+    }
+  }
+}
+

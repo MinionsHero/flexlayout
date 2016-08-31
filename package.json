@@ -1,0 +1,38 @@
+{
+  "name": "flexlayout",
+  "version": "1.0.0",
+  "description": "The flexbox polyfill with react",
+  "keywords": "flexlayout flexbox flex flex-polyfill flexbility polyfill flx-compatible",
+  "homepage": "http://www.pofod.com",
+  "bugs": "https://github.com/vijonliguoming/flexlayout/issues",
+  "license": "MIT",
+  "author": {
+    "name": "eric Lee",
+    "email": "please post your questions to github"
+  },
+  "repository": "https://github.com/vijonliguoming/flexlayout.git",
+  "scripts": {
+    "test": "node ./bin/test-website.js"
+  },
+  "dependencies": {
+    "lodash": "^4.14.0",
+    "jquery": "^3.0.0",
+    "classnames": "^2.2.5"
+  },
+  "devDependencies": {
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "css-loader": "^0.24.0",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.22.0",
+    "json-loader": "^0.5.4",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.2",
+    "webpack-browser-plugin": "^1.0.12",
+    "webpack-dev-server": "^1.15.0"
+  }
+}
