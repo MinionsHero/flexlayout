@@ -2,7 +2,7 @@ var React=require('react');
 var ReactDOM=require('react-dom');
 var _=require('lodash');
 import Select from './component/select/Select'
-import FlexLayout from '../src/FlexLayout';
+import FlexLayout from '../lib/FlexLayout';
 require('./base.less');
 require('./flexLayoutTest.less');
 var FlexLayoutTestComponent=React.createClass({

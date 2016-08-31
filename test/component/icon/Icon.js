@@ -1,7 +1,7 @@
 'use strict';
 import React from 'react';
 import classSet from 'classnames';
-import ReactUtil from '../../../src/util/ReactUtil';
+import ReactUtil from '../../../lib/util/ReactUtil';
 //需要引入../fonts文件夹下地所有fontAwesome字体文件
 require('!url!./fonts/fontawesome-webfont.woff');
 require('!url!./fonts/fontawesome-webfont.woff2');

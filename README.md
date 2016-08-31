@@ -22,48 +22,31 @@
 </FlexLayout>
 
 ```
-
->**支持的flex属性：**
-<table>
-                <tbody>
-                    <tr>
-                        <th>参数名称</th>
-                        <th>参数类型</th>
-                        <th>默认值</th>
-                        <th>参数解释</th>
-                        <th>举例</th>
-                    </tr>
-                    <tr>
-                        <td>type</td>
-                        <td>string</td>
-                        <td>div</td>
-                        <td>标签类型</td>
-                        <td>span、a</td>
-                    </tr>
-                    <tr>
-                        <td>flexMode</td>
-                        <td>枚举</td>
-                        <td>auto</td>
-                        <td>当前使用的flex模式,可以为自动根据浏览器支持判断或者强制使用flex(这样会导致旧版浏览器不再兼容)或者兼容模式(兼容模式下,强制所有浏览器都是用js进行计算,如果你想屏蔽所有浏览器实现flex的差异,可以用这个模式,但是该模式会降低现代浏览器的性能)</td>
-                        <td>auto/flex/compat</td>
-                    </tr>
-                    <tr>
-                        <td>style</td>
-                        <td>object</td>
-                        <td>{{width:'100%',height:'auto',flexDirection:'row',flexWrap:'nowrap',justifyContent:'flex-start',alignItems:'stretch',alignContent:'flex-start'}}</td>
-                        <td>style属性,必须把flex属性值写到这里面</td>
-                        <td>无</td>
-                    </tr>
-                    <tr>
-                        <td>style</td>
-                        <td>object</td>
-                        <td>{{flexGrow:0,flexShrink:1,flexBasis:'auto',alignSelf:'auto'}}</td>
-                        <td>这个是child 的style属性,必须把child的flex属性值写到这里面</td>
-                        <td>无</td>
-                    </tr>
-                </tbody>
-            </table>
-
+### 属性：
+>
+type
+&emsp;&emsp;参数类型:string,
+&emsp;&emsp;参数释义:FlexLayout默认采用的标签类型
+&emsp;&emsp;默认值:div,
+&emsp;&emsp;举例:span、a、div等
+flexMode
+&emsp;&emsp;参数类型:枚举,只能是auto/flex/compat,
+&emsp;&emsp;参数释义:当前使用的flex模式,
+&emsp;&emsp;&emsp;&emsp;auto-自动根据浏览器支持性来判断,确定是否需要用原生flex支持还是用js polyfill;
+&emsp;&emsp;&emsp;&emsp;flex-强制用原生浏览器支持,这样会导致不支持flex的浏览器没有任何flex效果。
+&emsp;&emsp;&emsp;&emsp;compat-强制用js实现flex效果,会忽略原生的flex引擎渲染,如果你想屏蔽浏览器之间实现flex的差异,可以用这个模式,但是该模式会降低浏览器的性能
+&emsp;&emsp;默认值:auto,
+&emsp;&emsp;举例:auto/flex/compat
+style
+&emsp;&emsp;参数类型:object,
+&emsp;&emsp;参数释义:style属性,必须把flex属性值写到这里
+&emsp;&emsp;默认值:{width:'100%',height:'auto',flexDirection:'row',flexWrap:'nowrap',justifyContent:'flex-start',alignItems:'stretch',alignContent:'flex-start'},
+&emsp;&emsp;举例:无
+style(子组件的style)
+&emsp;&emsp;参数类型:object,
+&emsp;&emsp;参数释义:这个是child 的style属性,必须把child的flex属性值写到这里面
+&emsp;&emsp;默认值:{flexGrow:0,flexShrink:1,flexBasis:'auto',alignSelf:'auto'}
+&emsp;&emsp;举例:无
 
 更多信息,请进入http://www.pofod.com 
 有问题,请在github的issues提出

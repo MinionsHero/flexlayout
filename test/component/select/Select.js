@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ClassNames from 'classnames';
 import $ from 'jquery';
-import {ReactUtil,EventUtil} from '../../../src/util/Util';
+import {ReactUtil,EventUtil} from '../../../lib/util/Util';
 import Icon from '../../component/icon/Icon';
 import {defaults,indexOf,forEach} from 'lodash';
 import Lang from './Lang.json';
