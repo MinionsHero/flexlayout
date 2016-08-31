@@ -24,29 +24,30 @@
 ```
 ### 属性：
 >
+```
 type
-&emsp;&emsp;参数类型:string,
-&emsp;&emsp;参数释义:FlexLayout默认采用的标签类型
-&emsp;&emsp;默认值:div,
-&emsp;&emsp;举例:span、a、div等
+参数类型:string,
+    参数释义:FlexLayout默认采用的标签类型
+    默认值:div,
+    举例:span、a、div等
 flexMode
-&emsp;&emsp;参数类型:枚举,只能是auto/flex/compat,
-&emsp;&emsp;参数释义:当前使用的flex模式,
-&emsp;&emsp;&emsp;&emsp;auto-自动根据浏览器支持性来判断,确定是否需要用原生flex支持还是用js polyfill;
-&emsp;&emsp;&emsp;&emsp;flex-强制用原生浏览器支持,这样会导致不支持flex的浏览器没有任何flex效果。
-&emsp;&emsp;&emsp;&emsp;compat-强制用js实现flex效果,会忽略原生的flex引擎渲染,如果你想屏蔽浏览器之间实现flex的差异,可以用这个模式,但是该模式会降低浏览器的性能
-&emsp;&emsp;默认值:auto,
-&emsp;&emsp;举例:auto/flex/compat
+    参数类型:枚举,只能是auto/flex/compat,
+    参数释义:当前使用的flex模式,
+        auto-自动根据浏览器支持性来判断,确定是否需要用原生flex支持还是用js polyfill;
+        flex-强制用原生浏览器支持,这样会导致不支持flex的浏览器没有任何flex效果。
+        compat-强制用js实现flex效果,会忽略原生的flex引擎渲染,如果你想屏蔽浏览器之间实现flex的差异,可以用这个模式,但是该模式会降低浏览器的性能
+    默认值:auto,
+    举例:auto/flex/compat
 style
-&emsp;&emsp;参数类型:object,
-&emsp;&emsp;参数释义:style属性,必须把flex属性值写到这里
-&emsp;&emsp;默认值:{width:'100%',height:'auto',flexDirection:'row',flexWrap:'nowrap',justifyContent:'flex-start',alignItems:'stretch',alignContent:'flex-start'},
-&emsp;&emsp;举例:无
+    参数类型:object,
+    参数释义:style属性,必须把flex属性值写到这里
+    默认值:{width:'100%',height:'auto',flexDirection:'row',flexWrap:'nowrap',justifyContent:'flex-start',alignItems:'stretch',alignContent:'flex-start'},
+    举例:无
 style(子组件的style)
-&emsp;&emsp;参数类型:object,
-&emsp;&emsp;参数释义:这个是child 的style属性,必须把child的flex属性值写到这里面
-&emsp;&emsp;默认值:{flexGrow:0,flexShrink:1,flexBasis:'auto',alignSelf:'auto'}
-&emsp;&emsp;举例:无
-
+    参数类型:object,
+    参数释义:这个是child 的style属性,必须把child的flex属性值写到这里面
+    默认值:{flexGrow:0,flexShrink:1,flexBasis:'auto',alignSelf:'auto'}
+    举例:无
+```
 更多信息,请进入http://www.pofod.com 
 有问题,请在github的issues提出
