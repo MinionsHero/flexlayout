@@ -26,7 +26,7 @@
 >
 ```
 type
-参数类型:string,
+    参数类型:string,
     参数释义:FlexLayout默认采用的标签类型
     默认值:div,
     举例:span、a、div等
