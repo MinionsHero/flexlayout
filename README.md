@@ -49,5 +49,5 @@ style(子组件的style)
     默认值:{flexGrow:0,flexShrink:1,flexBasis:'auto',alignSelf:'auto'}
     举例:无
 ```
-更多信息,请进入http://www.pofod.com 
+更多信息,请进入http://www.pofod.com （暂时无法访问）
 有问题,请在github的issues提出
